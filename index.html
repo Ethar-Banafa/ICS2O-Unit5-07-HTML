@@ -11,19 +11,23 @@
     <title>A webpage</title>
     </head>
     <body>
-<p id="demo"></p>
         <h1>The multiplication game!!</h1>
 <p>Enter a  simple integer multiplication question.<br><br> First enter positive numbers then enter negative numbers.</p>
- Enter question: <input type="text" id="demo" onclick="myFunction()">
-<button id="btn" onclick="myFuction()" id="demo">Click me</button>
+x: <input id="x">
+<br><br>
+y:<input id="y">
+<input type="button" id="btn" onclick="myFunction()" value="submit">
+<div id="divsubmit"></div>
 <script>
 function myFunction() {
-  var x=; 
-  var y=;
-  if (x*y) { document.getElementById("demo");
-} 
-else if (-x*-y) { document.getElementById("demo");
-} 
-     </script>
+    var x= document.getElementById("x");
+     var y= document.getElementById("y");
+      var xvalue= +x.value;
+      var yvalue= +y.value;
+      var submit= (xvalue*yvalue);
+    var divsubmit= document.getElementById("divsubmit");
+    divsubmit.innerHTML= submit;
+}
+</script>
     </body>
 </html>
