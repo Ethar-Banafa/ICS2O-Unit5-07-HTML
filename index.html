@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-       <head>
+  <head>
     <meta charset="utf-8">.
     <meta name="description" content="My first webpage, with image">
     <meta name="keywords" content="a website">
@@ -9,25 +9,14 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <title>A webpage</title>
-    </head>
-    <body>
-        <h1>The multiplication game!!</h1>
-<p>Enter a  simple integer multiplication question.<br><br> First enter positive numbers then enter negative numbers.</p>
-x: <input id="x">
-<br><br>
-y:<input id="y">
-<input type="button" id="btn" onclick="myFunction()" value="submit">
-<div id="divsubmit"></div>
-<script>
-function myFunction() {
-    var x= document.getElementById("x");
-     var y= document.getElementById("y");
-      var xvalue= +x.value;
-      var yvalue= +y.value;
-      var submit= (xvalue*yvalue);
-    var divsubmit= document.getElementById("divsubmit");
-    divsubmit.innerHTML= submit;
-}
-</script>
-    </body>
+  </head>
+  <body>
+    <h1>The multiplication game!!</h1>
+    <p>Enter a  simple integer multiplication question.<br><br> First enter positive numbers then enter negative numbers.</p>
+    x: <input id="x">
+    <br><br>
+    y:<input id="y">
+    <input type="button" id="btn" onclick="myFunction()" value="submit">
+    <div id="divsubmit"></div>
+  </body>
 </html>
